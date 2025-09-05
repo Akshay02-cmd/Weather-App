@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather app</title>
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">  <!-- Main container --> 
+
+    <div class="container fl">  
         <div class="weather">
             <div class="temp">
-                <p><span>20</span>°C</p> <!-- Temperature value *added celcius extra -->
+                <p>20<span>°C</span></p> 
             </div>
             <div class="time-location">
                 <p>City</p>
-                <p>Monday, 20 June 2024 | 12:00 PM</p>
+                <p class="time">Monday, 20 June 2024 | 12:00 PM</p>
             </div>
             <div class="weather-condition">
-                <p></p>
+                <p class="weather-icon">☀️</p>
                 <p>Sunny</p>
             </div>
         </div>
     </div>
-    <nav> <!-- Navigation bar -->
-        <form>
+
+    <nav class="fl"> 
+        <form class="search-form fl">
             <input type="text" placeholder="Search for a city" class="search-area"/>
-            <button type="submit">Search</button>
+            <button type="submit" class="search-button">Search</button>
         </form>
     </nav>
+
 </body>
 </html>
